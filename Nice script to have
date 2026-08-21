@@ -1,0 +1,2896 @@
+-- This file was generated at discord.gg/syncrypt
+
+local t1 = {}
+local t2 = {
+	value1 = game:GetService("Players")
+}
+game:GetService("CollectionService")
+t2.value2 = game:GetService("UserInputService")
+t2.value3 = game:GetService("TweenService")
+t2.value4 = game:GetService("RunService")
+game:GetService("HttpService")
+t2.value5 = t2.value1.LocalPlayer
+t2.value6 = t2.value5:WaitForChild("PlayerGui")
+local ScriptlyGui = t2.value6:FindFirstChild("ScriptlyGui")
+if ScriptlyGui then
+    ScriptlyGui:Destroy()
+end
+local color3 = Color3.fromRGB(9, 9, 16)
+local color3_2 = Color3.fromRGB(13, 13, 23)
+local color3_3 = Color3.fromRGB(19, 18, 31)
+local color3_4 = Color3.fromRGB(28, 26, 44)
+local color3_5 = Color3.fromRGB(16, 15, 27)
+local color3_6 = Color3.fromRGB(100, 180, 255)
+local color3_7 = Color3.fromRGB(200, 230, 255)
+local color3_8 = Color3.fromRGB(70, 130, 200)
+local color3_9 = Color3.fromRGB(242, 240, 250)
+local color3_10 = Color3.fromRGB(190, 187, 205)
+local color3_11 = Color3.fromRGB(120, 118, 140)
+local color3_12 = Color3.fromRGB(58, 47, 82)
+local color3_13 = Color3.fromRGB(100, 150, 255)
+local color3_14 = Color3.fromRGB(55, 52, 72)
+local color3_15 = Color3.fromRGB(100, 180, 255)
+local color3_16 = Color3.fromRGB(95, 220, 150)
+local color3_17 = Color3.fromRGB(235, 90, 105)
+t2.value7 = {
+	Background = color3,
+	Sidebar = color3_2,
+	Surface = color3_3,
+	SurfaceHover = color3_4,
+	Item = color3_5,
+	Accent = color3_6,
+	AccentLight = color3_7,
+	AccentDark = color3_8,
+	Text = color3_9,
+	TextSecondary = color3_10,
+	TextMuted = color3_11,
+	Stroke = color3_12,
+	StrokeHover = color3_13,
+	Off = color3_14,
+	On = color3_15,
+	Success = color3_16,
+	Danger = color3_17
+}
+t2.value8 = t2.value7
+local color3_18 = Color3.fromRGB(5, 5, 10)
+local color3_19 = Color3.fromRGB(8, 8, 15)
+local color3_20 = Color3.fromRGB(12, 12, 20)
+local color3_21 = Color3.fromRGB(18, 17, 28)
+local color3_22 = Color3.fromRGB(10, 9, 18)
+local color3_23 = Color3.fromRGB(80, 150, 220)
+local color3_24 = Color3.fromRGB(150, 200, 255)
+local color3_25 = Color3.fromRGB(50, 100, 180)
+local color3_26 = Color3.fromRGB(200, 198, 220)
+local color3_27 = Color3.fromRGB(140, 138, 160)
+local color3_28 = Color3.fromRGB(90, 88, 110)
+local color3_29 = Color3.fromRGB(35, 28, 55)
+local color3_30 = Color3.fromRGB(70, 120, 220)
+local color3_31 = Color3.fromRGB(40, 38, 55)
+local color3_32 = Color3.fromRGB(80, 150, 220)
+local color3_33 = Color3.fromRGB(70, 180, 120)
+local color3_34 = Color3.fromRGB(200, 60, 80)
+t2.value9 = {
+	Background = color3_18,
+	Sidebar = color3_19,
+	Surface = color3_20,
+	SurfaceHover = color3_21,
+	Item = color3_22,
+	Accent = color3_23,
+	AccentLight = color3_24,
+	AccentDark = color3_25,
+	Text = color3_26,
+	TextSecondary = color3_27,
+	TextMuted = color3_28,
+	Stroke = color3_29,
+	StrokeHover = color3_30,
+	Off = color3_31,
+	On = color3_32,
+	Success = color3_33,
+	Danger = color3_34
+}
+t2.value10 = Enum.Font.Gotham
+t2.value11 = Enum.Font.GothamBold
+t2.value12 = "SCRIPTLY-ACCESS-3830"
+t2.value13 = "https://work.ink/2L5e/scriptly"
+t2.value14 = "https://discord.gg/7J8uRrEBGV"
+function t2.value15(p1)
+    if typeof(setclipboard) == "function" then
+        setclipboard(p1)
+
+        return true
+    end
+
+    return false
+end
+t2.value16 = nil
+function t2.value16(p2, p3, p4)
+    local v188 = Instance.new(p2)
+    local _pairs = pairs
+
+    if not p3 then
+        p3 = {}
+    end
+
+    for v190, v191 in _pairs(p3) do
+        v188[v190] = v191
+    end
+
+    v188.Parent = p4
+
+    return v188
+end
+function t2.value17(p5, p6, p7, p8)
+    local value16 = t2.value16
+    local v197 = p7 or 1
+    local v198 = p8 or 0
+    local Border = Enum.ApplyStrokeMode.Border
+
+    return value16("UIStroke", {
+		Color = p6,
+		Thickness = v197,
+		Transparency = v198,
+		ApplyStrokeMode = Border
+	}, p5)
+end
+function t2.value18(p9, p10, p11, p12, p13)
+    if not p9 then
+        return
+    end
+
+    local new = TweenInfo.new
+    local v182 = p11 or 0.2
+
+    if not p12 then
+        p12 = Enum.EasingStyle.Quad
+    end
+
+    if not p13 then
+        p13 = Enum.EasingDirection.Out
+    end
+
+    local v183 = new(v182, p12, p13)
+
+    t2.value3:Create(p9, v183, p10):Play()
+end;
+(function()
+    local value16 = t2.value16
+    local Sibling = Enum.ZIndexBehavior.Sibling
+    local v207 = value16("ScreenGui", {
+		Name = "ScriptlyKeyGui",
+		ResetOnSpawn = false,
+		IgnoreGuiInset = true,
+		ZIndexBehavior = Sibling,
+		DisplayOrder = 100
+	}, t2.value6)
+    local value16_2 = t2.value16
+    local uDim2 = UDim2.fromScale(1, 1)
+    local Background = t2.value8.Background
+    local v211 = value16_2("Frame", {
+		Name = "Background",
+		Size = uDim2,
+		BackgroundColor3 = Background,
+		BorderSizePixel = 0
+	}, v207)
+    local value16_3 = t2.value16
+    local vector2 = Vector2.new(0.5, 0.5)
+    local uDim2_2 = UDim2.fromScale(0.5, 0.5)
+    local uDim2_3 = UDim2.fromOffset(430, 300)
+    local Surface = t2.value8.Surface
+    local v217 = value16_3("Frame", {
+		Name = "KeyWindow",
+		AnchorPoint = vector2,
+		Position = uDim2_2,
+		Size = uDim2_3,
+		BackgroundColor3 = Surface,
+		BorderSizePixel = 0
+	}, v211)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 16)
+	}, v217)
+    t2.value17(v217, t2.value8.AccentDark, 1.2)
+
+    local value16_4 = t2.value16
+    local uDim2_4 = UDim2.new(1, -40, 0, 40)
+    local uDim2_5 = UDim2.new(0, 20, 0, 22)
+    local value8Text = t2.value8.Text
+    local value11 = t2.value11
+    local Center = Enum.TextXAlignment.Center
+
+    value16_4("TextLabel", {
+		Name = "Title",
+		Size = uDim2_4,
+		Position = uDim2_5,
+		BackgroundTransparency = 1,
+		Text = "ð  Scriptly Key System",
+		TextColor3 = value8Text,
+		TextSize = 21,
+		Font = value11,
+		TextXAlignment = Center
+	}, v217)
+
+    local value16_5 = t2.value16
+    local uDim2_6 = UDim2.new(1, -50, 0, 42)
+    local uDim2_7 = UDim2.new(0, 25, 0, 65)
+    local TextSecondary = t2.value8.TextSecondary
+    local value10 = t2.value10
+    local Center2 = Enum.TextXAlignment.Center
+
+    value16_5("TextLabel", {
+		Name = "Subtitle",
+		Size = uDim2_6,
+		Position = uDim2_7,
+		BackgroundTransparency = 1,
+		Text = "Get your access key, then enter it below.",
+		TextColor3 = TextSecondary,
+		TextSize = 13,
+		Font = value10,
+		TextWrapped = true,
+		TextXAlignment = Center2
+	}, v217)
+
+    local value16_6 = t2.value16
+    local uDim2_8 = UDim2.new(1, -50, 0, 44)
+    local uDim2_9 = UDim2.new(0, 25, 0, 120)
+    local Item = t2.value8.Item
+    local TextMuted = t2.value8.TextMuted
+    local value8Text2 = t2.value8.Text
+    local value10_2 = t2.value10
+    local Center3 = Enum.TextXAlignment.Center
+    local v238 = value16_6("TextBox", {
+		Name = "KeyInput",
+		Size = uDim2_8,
+		Position = uDim2_9,
+		BackgroundColor3 = Item,
+		BorderSizePixel = 0,
+		Text = "",
+		PlaceholderText = "Enter your key...",
+		PlaceholderColor3 = TextMuted,
+		TextColor3 = value8Text2,
+		TextSize = 13,
+		Font = value10_2,
+		ClearTextOnFocus = false,
+		TextXAlignment = Center3
+	}, v217)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 9)
+	}, v238)
+
+    local v239 = t2.value17(v238, t2.value8.Stroke, 1)
+    local value16_7 = t2.value16
+    local uDim2_10 = UDim2.new(0.5, -30, 0, 42)
+    local uDim2_11 = UDim2.new(0, 25, 0, 180)
+    local color3_35 = Color3.fromRGB(30, 80, 150)
+    local AccentLight = t2.value8.AccentLight
+    local v245 = value16_7("TextButton", {
+		Name = "GetKey",
+		Size = uDim2_10,
+		Position = uDim2_11,
+		BackgroundColor3 = color3_35,
+		BorderSizePixel = 0,
+		Text = "ð  Get Key",
+		TextColor3 = AccentLight,
+		TextSize = 13,
+		Font = t2.value11,
+		AutoButtonColor = false
+	}, v217)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 9)
+	}, v245)
+
+    local v246 = t2.value17(v245, t2.value8.AccentDark, 1)
+    local value16_8 = t2.value16
+    local uDim2_12 = UDim2.new(0.5, -30, 0, 42)
+    local uDim2_13 = UDim2.new(0.5, 5, 0, 180)
+    local Accent = t2.value8.Accent
+    local color3_36 = Color3.fromRGB(255, 255, 255)
+    local v252 = value16_8("TextButton", {
+		Name = "Verify",
+		Size = uDim2_12,
+		Position = uDim2_13,
+		BackgroundColor3 = Accent,
+		BorderSizePixel = 0,
+		Text = "â  Verify Key",
+		TextColor3 = color3_36,
+		TextSize = 13,
+		Font = t2.value11,
+		AutoButtonColor = false
+	}, v217)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 9)
+	}, v252)
+    t2.value17(v252, t2.value8.AccentLight, 1)
+
+    local value16_9 = t2.value16
+    local uDim2_14 = UDim2.new(1, -50, 0, 30)
+    local uDim2_15 = UDim2.new(0, 25, 0, 235)
+    local TextMuted2 = t2.value8.TextMuted
+    local value10_3 = t2.value10
+    local Center4 = Enum.TextXAlignment.Center
+    local v259 = value16_9("TextLabel", {
+		Name = "Status",
+		Size = uDim2_14,
+		Position = uDim2_15,
+		BackgroundTransparency = 1,
+		Text = "A key is required to continue.",
+		TextColor3 = TextMuted2,
+		TextSize = 12,
+		Font = value10_3,
+		TextXAlignment = Center4
+	}, v217)
+
+    v245.MouseEnter:Connect(function()
+        t2.value18(v245, {
+			BackgroundColor3 = Color3.fromRGB(50, 110, 180)
+		}, 0.12)
+        t2.value18(v246, {
+			Color = t2.value8.StrokeHover
+		}, 0.12)
+    end)
+    v245.MouseLeave:Connect(function()
+        t2.value18(v245, {
+			BackgroundColor3 = Color3.fromRGB(30, 80, 150)
+		}, 0.12)
+        t2.value18(v246, {
+			Color = t2.value8.AccentDark
+		}, 0.12)
+    end)
+    v252.MouseEnter:Connect(function()
+        t2.value18(v252, {
+			BackgroundColor3 = t2.value8.AccentLight
+		}, 0.12)
+    end)
+    v252.MouseLeave:Connect(function()
+        t2.value18(v252, {
+			BackgroundColor3 = t2.value8.Accent
+		}, 0.12)
+    end)
+    v238.Focused:Connect(function()
+        t2.value18(v239, {
+			Color = t2.value8.StrokeHover
+		}, 0.15)
+    end)
+    v238.FocusLost:Connect(function()
+        t2.value18(v239, {
+			Color = t2.value8.Stroke
+		}, 0.15)
+    end)
+    v245.MouseButton1Click:Connect(function()
+        if t2.value15(t2.value13) then
+            v259.Text = "â Key link copied to clipboard!"
+            v259.TextColor3 = t2.value8.Success
+        else
+            v259.Text = "Copy isn't supported here. Use: " .. t2.value13
+            v259.TextColor3 = t2.value8.TextSecondary
+        end
+
+        task.delay(3, function()
+            if v259.Parent then
+                v259.Text = "A key is required to continue."
+                v259.TextColor3 = t2.value8.TextMuted
+            end
+        end)
+    end)
+
+    local function v260()
+        local v626 = v238.Text:gsub("^%s+", ""):gsub("%s+$", "")
+
+        if v626 == "" then
+            v259.Text = "â Please enter a key."
+            v259.TextColor3 = t2.value8.Danger
+
+            return false
+        end
+
+        if v626 == t2.value12 then
+            v259.Text = "â Key accepted!"
+            v259.TextColor3 = t2.value8.Success
+            t2.value18(v252, {
+				BackgroundColor3 = t2.value8.Success
+			}, 0.15)
+            task.wait(0.5)
+            v207:Destroy()
+
+            return true
+        end
+
+        v259.Text = "â Invalid key."
+        v259.TextColor3 = t2.value8.Danger
+        t2.value18(v239, {
+			Color = t2.value8.Danger
+		}, 0.15)
+        task.delay(1, function()
+            if v238.Parent then
+                t2.value18(v239, {
+					Color = t2.value8.Stroke
+				}, 0.15)
+            end
+        end)
+
+        return false
+    end
+
+    v252.MouseButton1Click:Connect(v260)
+    v238.FocusLost:Connect(function(enterPressed)
+        if enterPressed then
+            v260()
+        end
+    end)
+
+    return v207
+end)()
+local value16 = t2.value16
+local Sibling = Enum.ZIndexBehavior.Sibling
+t2.value19 = value16("ScreenGui", {
+	Name = "ScriptlyGui",
+	ResetOnSpawn = false,
+	IgnoreGuiInset = true,
+	ZIndexBehavior = Sibling,
+	DisplayOrder = 50
+}, t2.value6)
+t2.value20 = Vector2.new(650, 450)
+t2.value21 = Vector2.new(1400, 900)
+local value16_10 = t2.value16
+local vector2 = Vector2.new(0.5, 0.5)
+local uDim2 = UDim2.fromScale(0.5, 0.5)
+local uDim2_16 = UDim2.fromOffset(900, 600)
+local Background = t2.value8.Background
+t2.value22 = value16_10("Frame", {
+	Name = "MainFrame",
+	AnchorPoint = vector2,
+	Position = uDim2,
+	Size = uDim2_16,
+	BackgroundColor3 = Background,
+	BorderSizePixel = 0,
+	ClipsDescendants = true
+}, t2.value19)
+local value22 = t2.value22
+t2.value16("UICorner", {
+	CornerRadius = UDim.new(0, 18)
+}, value22)
+t2.value17(t2.value22, t2.value8.AccentDark, 1.2)
+t2.value16("UISizeConstraint", {
+	MinSize = t2.value20,
+	MaxSize = t2.value21
+}, t2.value22)
+local value16_11 = t2.value16
+local vector2_2 = Vector2.new(0.5, 0.5)
+local uDim2_17 = UDim2.fromScale(0.5, 0.5)
+local uDim2_18 = UDim2.new(1, 45, 1, 45)
+local color3_37 = Color3.fromRGB(0, 0, 0)
+local Slice = Enum.ScaleType.Slice
+local rect = Rect.new(49, 49, 450, 450)
+value16_11("ImageLabel", {
+	Name = "Shadow",
+	AnchorPoint = vector2_2,
+	Position = uDim2_17,
+	Size = uDim2_18,
+	BackgroundTransparency = 1,
+	Image = "rbxassetid://6014261993",
+	ImageColor3 = color3_37,
+	ImageTransparency = 0.45,
+	ScaleType = Slice,
+	SliceCenter = rect,
+	ZIndex = 0
+}, t2.value22)
+t2.value22.ZIndex = 2
+local value16_12 = t2.value16
+local uDim2_19 = UDim2.new(0, 84, 1, 0)
+local Sidebar = t2.value8.Sidebar
+local v56 = value16_12("Frame", {
+	Name = "Sidebar",
+	Size = uDim2_19,
+	BackgroundColor3 = Sidebar,
+	BorderSizePixel = 0,
+	ZIndex = 3
+}, t2.value22)
+t2.value16("UICorner", {
+	CornerRadius = UDim.new(0, 18)
+}, v56)
+local value16_13 = t2.value16
+local uDim2_20 = UDim2.new(0, 20, 1, 0)
+local uDim2_21 = UDim2.new(1, -20, 0, 0)
+local Sidebar2 = t2.value8.Sidebar
+value16_13("Frame", {
+	Name = "SidebarMask",
+	Size = uDim2_20,
+	Position = uDim2_21,
+	BackgroundColor3 = Sidebar2,
+	BorderSizePixel = 0,
+	ZIndex = 3
+}, v56)
+local value16_14 = t2.value16
+local uDim2_22 = UDim2.new(1, -1, 0, 0)
+local uDim2_23 = UDim2.new(0, 1, 1, 0)
+local Stroke = t2.value8.Stroke
+value16_14("Frame", {
+	Name = "Separator",
+	Position = uDim2_22,
+	Size = uDim2_23,
+	BackgroundColor3 = Stroke,
+	BorderSizePixel = 0,
+	ZIndex = 5
+}, v56)
+local value16_15 = t2.value16
+local uDim2_24 = UDim2.new(1, 0, 1, -78)
+local uDim2_25 = UDim2.new(0, 0, 0, 78)
+local uDim2_26 = UDim2.new()
+local AutomaticSizeY = Enum.AutomaticSize.Y
+local ScrollingDirectionY = Enum.ScrollingDirection.Y
+local Accent = t2.value8.Accent
+t2.value23 = value16_15("ScrollingFrame", {
+	Name = "CategoryList",
+	Size = uDim2_24,
+	Position = uDim2_25,
+	BackgroundTransparency = 1,
+	BorderSizePixel = 0,
+	CanvasSize = uDim2_26,
+	AutomaticCanvasSize = AutomaticSizeY,
+	ScrollingDirection = ScrollingDirectionY,
+	ScrollBarThickness = 3,
+	ScrollBarImageColor3 = Accent,
+	ScrollBarImageTransparency = 0.2,
+	ZIndex = 5
+}, v56)
+local value16_16 = t2.value16
+local uDim2_27 = UDim2.new(1, -20, 0, 54)
+local uDim2_28 = UDim2.new(0, 10, 0, 12)
+local Surface = t2.value8.Surface
+local AccentLight = t2.value8.AccentLight
+t2.value24 = value16_16("TextButton", {
+	Name = "Logo",
+	Size = uDim2_27,
+	Position = uDim2_28,
+	BackgroundColor3 = Surface,
+	BorderSizePixel = 0,
+	Text = "S",
+	TextColor3 = AccentLight,
+	TextSize = 21,
+	Font = t2.value11,
+	AutoButtonColor = false,
+	ZIndex = 5
+}, v56)
+local value24 = t2.value24
+t2.value16("UICorner", {
+	CornerRadius = UDim.new(0, 11)
+}, value24)
+t2.value17(t2.value24, t2.value8.AccentDark, 1)
+t2.value24.MouseEnter:Connect(function()
+    t2.value18(t2.value24, {
+		BackgroundColor3 = t2.value8.SurfaceHover
+	}, 0.12)
+    t2.value18(t2.value24, {
+		TextColor3 = t2.value8.AccentLight
+	}, 0.12)
+end)
+t2.value24.MouseLeave:Connect(function()
+    t2.value18(t2.value24, {
+		BackgroundColor3 = t2.value8.Surface
+	}, 0.12)
+    t2.value18(t2.value24, {
+		TextColor3 = t2.value8.AccentLight
+	}, 0.12)
+end)
+local value16_17 = t2.value16
+local uDim2_29 = UDim2.new(1, -84, 1, 0)
+local uDim2_30 = UDim2.new(0, 84, 0, 0)
+t2.value25 = value16_17("Frame", {
+	Name = "Content",
+	Size = uDim2_29,
+	Position = uDim2_30,
+	BackgroundTransparency = 1,
+	ZIndex = 3
+}, t2.value22)
+local value16_18 = t2.value16
+local uDim2_31 = UDim2.new(1, -32, 0, 46)
+local uDim2_32 = UDim2.new(0, 16, 0, 14)
+local Surface2 = t2.value8.Surface
+local v85 = value16_18("Frame", {
+	Name = "Search",
+	Size = uDim2_31,
+	Position = uDim2_32,
+	BackgroundColor3 = Surface2,
+	BorderSizePixel = 0,
+	ZIndex = 10
+}, t2.value25)
+t2.value16("UICorner", {
+	CornerRadius = UDim.new(0, 11)
+}, v85)
+t2.value26 = t2.value17(v85, t2.value8.Stroke, 1)
+local value16_19 = t2.value16
+local vector2_3 = Vector2.new(0, 0.5)
+local uDim2_33 = UDim2.new(0, 12, 0.5, 0)
+local uDim2_34 = UDim2.fromOffset(25, 25)
+local AccentLight2 = t2.value8.AccentLight
+value16_19("TextLabel", {
+	Name = "Icon",
+	AnchorPoint = vector2_3,
+	Position = uDim2_33,
+	Size = uDim2_34,
+	BackgroundTransparency = 1,
+	Text = "/",
+	TextColor3 = AccentLight2,
+	TextSize = 22,
+	Font = t2.value11,
+	ZIndex = 11
+}, v85)
+local value16_20 = t2.value16
+local uDim2_35 = UDim2.new(1, -85, 1, 0)
+local uDim2_36 = UDim2.new(0, 39, 0, 0)
+local TextMuted = t2.value8.TextMuted
+local value8Text = t2.value8.Text
+local value10 = t2.value10
+local Left = Enum.TextXAlignment.Left
+t2.value27 = value16_20("TextBox", {
+	Name = "Input",
+	Size = uDim2_35,
+	Position = uDim2_36,
+	BackgroundTransparency = 1,
+	Text = "",
+	PlaceholderText = "Search features...",
+	PlaceholderColor3 = TextMuted,
+	TextColor3 = value8Text,
+	TextSize = 14,
+	Font = value10,
+	ClearTextOnFocus = false,
+	TextXAlignment = Left,
+	ZIndex = 11
+}, v85)
+local value16_21 = t2.value16
+local vector2_4 = Vector2.new(1, 0.5)
+local uDim2_37 = UDim2.new(1, -10, 0.5, 0)
+local uDim2_38 = UDim2.fromOffset(28, 28)
+local TextMuted3 = t2.value8.TextMuted
+t2.value28 = value16_21("TextButton", {
+	Name = "Clear",
+	AnchorPoint = vector2_4,
+	Position = uDim2_37,
+	Size = uDim2_38,
+	BackgroundTransparency = 1,
+	Text = "Ã",
+	TextColor3 = TextMuted3,
+	TextSize = 20,
+	Font = t2.value11,
+	Visible = false,
+	AutoButtonColor = false,
+	ZIndex = 12
+}, v85)
+t2.value28.MouseButton1Click:Connect(function()
+    t2.value27.Text = ""
+end)
+t2.value27.Focused:Connect(function()
+    t2.value18(t2.value26, {
+		Color = t2.value8.StrokeHover
+	}, 0.15)
+end)
+t2.value27.FocusLost:Connect(function()
+    t2.value18(t2.value26, {
+		Color = t2.value8.Stroke
+	}, 0.15)
+end)
+local t3 = {
+	{},
+	{{
+		title = "ð¤  Player Movement",
+		items = {
+			"Fly",
+			"No Clip",
+			"Anti-AFK"
+		}
+	}},
+	{{
+		title = "â¡  Auto",
+		items = {
+			"Auto Upgrade Name Tag",
+			"Auto Rebirth",
+			"Auto Farm wins",
+			"Auto Spam Chat"
+		}
+	}},
+	{{
+		title = "â¨  World Visuals",
+		items = {
+			"No Fog",
+			"RGB Sky",
+			"Always Night"
+		}
+	}},
+	{
+		{
+			title = "ð  Key Information",
+			items = {},
+			customContent = "keyInfo"
+		},
+		{
+			title = "ð¨  Appearance",
+			items = {
+				"Dark Mode",
+				"Compact View"
+			}
+		},
+		{
+			title = "ð¬  Discord",
+			items = {},
+			buttonText = "Copy Discord Link"
+		}
+	}
+}
+t2.value29 = nil
+t2.value29 = {}
+function t2.value30(p14)
+    if t2.value29[p14] == nil then
+        t2.value29[p14] = false
+    end
+
+    return t2.value29[p14]
+end
+t2.value31 = nil
+function t2.value32(p15, p16)
+    t2.value29[p15] = p16
+end
+t2.value33 = false
+t2.value34 = nil
+t2.value34 = {}
+function t2.value35()
+    for k, v in pairs(t2.value34) do
+        local v305 = k
+
+        if v305 and v305.Parent then
+            v305.CanCollide = v
+        end
+    end
+
+    t2.value34 = {}
+end
+local Stepped = t2.value4.Stepped
+t2.value36 = nil
+Stepped:Connect(function()
+    if not t2.value33 then
+        return
+    end
+
+    local Character = t2.value5.Character
+
+    if not Character then
+        return
+    end
+
+    for _, descendant in ipairs(Character:GetDescendants()) do
+        if descendant:IsA("BasePart") then
+            if t2.value34[descendant] == nil then
+                t2.value34[descendant] = descendant.CanCollide
+            end
+
+            descendant.CanCollide = false
+        end
+    end
+end)
+t2.value37 = false
+t2.value38 = nil
+t2.value39 = nil
+t2.value40 = false
+t2.value41 = false
+t2.value42 = false
+t2.value43 = nil
+t2.value44 = 0.5
+t2.value45 = nil
+t2.value46 = false
+t2.value36 = false
+t2.value43 = 1
+t2.value39 = 15
+t2.value38 = false
+t2.value45 = false
+t2.value31 = 0.1
+function t2.value47(p17)
+    t2.value37 = p17
+
+    if not p17 or t2.value40 then
+        return
+    end
+
+    task.spawn(function()
+        while t2.value37 do
+            local ok, result = pcall(function()
+                return game:GetService("ReplicatedStorage").Systems.Player.NameTag.Events.Remote.RequestNameTagUpgrade
+            end)
+            local v644 = result
+
+            if ok then
+                ok = v644
+            end
+
+            if ok then
+                pcall(function()
+                    v644:InvokeServer()
+                end)
+            end
+
+            task.wait(0.5)
+        end
+    end)
+end
+function t2.value48(p18)
+    t2.value41 = p18
+
+    if not p18 or t2.value42 then
+        return
+    end
+
+    task.spawn(function()
+        while t2.value41 do
+            local ok, result = pcall(function()
+                return game:GetService("ReplicatedStorage").Systems.Rebirth.Events.Remote.RequestRebirth
+            end)
+            local v647 = result
+
+            if ok then
+                ok = v647
+            end
+
+            if ok then
+                pcall(function()
+                    v647:FireServer()
+                end)
+            end
+
+            task.wait(t2.value44)
+        end
+    end)
+end
+function t2.value49(p19)
+    t2.value46 = p19
+
+    if not p19 or t2.value36 then
+        return
+    end
+
+    t2.value36 = true
+    task.spawn(function()
+        while t2.value46 do
+            local ok, result, v633, v634, v635, v636 = pcall(function()
+                local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+                return ReplicatedStorage.Systems.Game.Events.Remote.PlayerRequestSitAtSeat, ReplicatedStorage.Systems.Game.Events.Remote.RequestPlayWithAI, ReplicatedStorage.Systems.Game.Events.Remote.PlayerDecision, workspace.Map.GameTables.GameTable_K, workspace.Map.GameTables.GameTable_K.Seat2
+            end)
+            local v637 = result
+            local v638 = v633
+            local v639 = v634
+            local v640 = v635
+            local v641 = v636
+
+            if ok then
+                ok = v637
+
+                if ok then
+                    ok = v638 and (v639 and (v640 and v641))
+                end
+            end
+
+            if ok then
+                pcall(function()
+                    v637:FireServer(v641)
+                end)
+                task.wait(0.25)
+
+                if t2.value46 then
+                    pcall(function()
+                        v638:FireServer()
+                    end)
+                    task.wait(t2.value39)
+
+                    if t2.value46 then
+                        pcall(function()
+                            v639:FireServer(v640, "CASH_OUT")
+                        end)
+
+                        if t2.value46 then
+                            pcall(function()
+                                v639:FireServer(v640, "CONFIRM")
+                            end)
+                        end
+                    end
+                end
+            end
+
+            task.wait(t2.value43)
+        end
+
+        t2.value36 = false
+    end)
+end
+function t2.value50(p20)
+    t2.value38 = p20
+
+    if not p20 or t2.value45 then
+        return
+    end
+
+    t2.value45 = true
+    task.spawn(function()
+        while t2.value38 do
+            local ok, result = pcall(function()
+                return game:GetService("ReplicatedStorage").Systems.QuickChat.Event.Remote.SendQuickChatMessage
+            end)
+            local v630 = result
+
+            if ok and v630 then
+                pcall(function()
+                    v630:FireServer("OMG")
+                end)
+            end
+
+            task.wait(t2.value31)
+        end
+
+        t2.value45 = false
+    end)
+end
+function t2.value51(p21, p22, p23, p24)
+    local u351 = p23 or 0
+    local u352 = p24 or 100
+    local value16_22 = t2.value16
+    local uDim2_39 = UDim2.new(1, 0, 0, 36)
+    local Item = t2.value8.Item
+    local p21ZIndex = p21.ZIndex
+    local v357 = value16_22("Frame", {
+		Name = "Slider",
+		Size = uDim2_39,
+		BackgroundColor3 = Item,
+		BorderSizePixel = 0,
+		ZIndex = p21ZIndex + 1
+	}, p21)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 8)
+	}, v357)
+
+    local value16_23 = t2.value16
+    local uDim2_40 = UDim2.new(0, 120, 1, 0)
+    local uDim2_41 = UDim2.new(0, 12, 0, 0)
+    local TextSecondary = t2.value8.TextSecondary
+    local value10_4 = t2.value10
+    local Left2 = Enum.TextXAlignment.Left
+    local Center = Enum.TextYAlignment.Center
+    local ZIndex = v357.ZIndex
+    local v366 = value16_23("TextLabel", {
+		Name = "Label",
+		Size = uDim2_40,
+		Position = uDim2_41,
+		BackgroundTransparency = 1,
+		Text = p22,
+		TextColor3 = TextSecondary,
+		TextSize = 13,
+		Font = value10_4,
+		TextXAlignment = Left2,
+		TextYAlignment = Center,
+		ZIndex = ZIndex + 1
+	}, v357)
+    local value16_24 = t2.value16
+    local vector2_5 = Vector2.new(1, 0.5)
+    local uDim2_42 = UDim2.new(1, -12, 0.5, 0)
+    local uDim2_43 = UDim2.fromOffset(40, 16)
+    local AccentLight3 = t2.value8.AccentLight
+    local value11 = t2.value11
+    local Right = Enum.TextXAlignment.Right
+    local v374 = v357.ZIndex + 1
+    local v375 = value16_24("TextLabel", {
+		Name = "Value",
+		AnchorPoint = vector2_5,
+		Position = uDim2_42,
+		Size = uDim2_43,
+		BackgroundTransparency = 1,
+		Text = "50",
+		TextColor3 = AccentLight3,
+		TextSize = 13,
+		Font = value11,
+		TextXAlignment = Right,
+		ZIndex = v374
+	}, v357)
+    local value16_25 = t2.value16
+    local uDim2_44 = UDim2.new(1, -172, 0, 4)
+    local uDim2_45 = UDim2.new(0, 132, 0.5, -2)
+    local vector2_6 = Vector2.new(0, 0.5)
+    local Stroke2 = t2.value8.Stroke
+    local ZIndex2 = v357.ZIndex
+    local v382 = value16_25("Frame", {
+		Name = "SliderBackground",
+		Size = uDim2_44,
+		Position = uDim2_45,
+		AnchorPoint = vector2_6,
+		BackgroundColor3 = Stroke2,
+		BorderSizePixel = 0,
+		ZIndex = ZIndex2 + 1
+	}, v357)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 2)
+	}, v382)
+
+    local value16_26 = t2.value16
+    local uDim2_46 = UDim2.new(0.5, 0, 1, 0)
+    local Accent2 = t2.value8.Accent
+    local ZIndex3 = v357.ZIndex
+    local v387 = value16_26("Frame", {
+		Name = "Fill",
+		Size = uDim2_46,
+		BackgroundColor3 = Accent2,
+		BorderSizePixel = 0,
+		ZIndex = ZIndex3 + 2
+	}, v382)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 2)
+	}, v387)
+
+    local value16_27 = t2.value16
+    local uDim2_47 = UDim2.fromOffset(14, 14)
+    local uDim2_48 = UDim2.new(0.5, -7, 0.5, -7)
+    local color3_38 = Color3.fromRGB(245, 245, 250)
+    local v392 = v357.ZIndex + 3
+    local v393 = value16_27("Frame", {
+		Name = "Knob",
+		Size = uDim2_47,
+		Position = uDim2_48,
+		BackgroundColor3 = color3_38,
+		BorderSizePixel = 0,
+		ZIndex = v392
+	}, v382)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 7)
+	}, v393)
+
+    local function v394(p25, p26)
+        local v650 = math.clamp(p25, u351, u352)
+
+        t2.value32(p22, v650)
+
+        local v651 = (v650 - u351) / (u352 - u351)
+        local value18 = t2.value18
+        local v653 = not p26 and 0.15 or 0
+
+        value18(v387, {
+			Size = UDim2.new(v651, 0, 1, 0)
+		}, v653)
+        t2.value18(v393, {
+			Position = UDim2.new(v651, -7, 0.5, -7)
+		}, v653)
+        v375.Text = tostring((math.floor(v650 + 0.5)))
+    end
+
+    v394(t2.value30(p22) or 50, true)
+
+    local u395 = false
+
+    v382.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            u395 = true
+        end
+    end)
+    v382.InputEnded:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            u395 = false
+        end
+    end)
+    game:GetService("UserInputService").InputChanged:Connect(function(input)
+        if not u395 then
+            return
+        end
+
+        if input.UserInputType ~= Enum.UserInputType.MouseMovement and input.UserInputType ~= Enum.UserInputType.Touch then
+            return
+        end
+
+        local PositionX = input.Position.X
+        local AbsolutePositionX = v382.AbsolutePosition.X
+        local AbsoluteSizeX = v382.AbsoluteSize.X
+        local v660 = math.clamp((PositionX - AbsolutePositionX) / AbsoluteSizeX, 0, 1)
+        local v661 = u352 - u351
+        local v662 = u351 + v660 * v661
+
+        v394(v662, false)
+    end)
+    v357.MouseEnter:Connect(function()
+        t2.value18(v357, {
+			BackgroundColor3 = t2.value8.SurfaceHover
+		}, 0.1)
+        t2.value18(v366, {
+			TextColor3 = t2.value8.Text
+		}, 0.1)
+    end)
+    v357.MouseLeave:Connect(function()
+        t2.value18(v357, {
+			BackgroundColor3 = t2.value8.Item
+		}, 0.1)
+        t2.value18(v366, {
+			TextColor3 = t2.value8.TextSecondary
+		}, 0.1)
+    end)
+
+    return v357
+end
+function t2.value52(p27, p28, p29)
+    if not p29 then
+        p29 = p28
+    end
+
+    local value16_28 = t2.value16
+    local uDim2_49 = UDim2.new(1, 0, 0, 36)
+    local Item = t2.value8.Item
+    local p27ZIndex = p27.ZIndex
+    local v322 = value16_28("Frame", {
+		Name = "NumberInput",
+		Size = uDim2_49,
+		BackgroundColor3 = Item,
+		BorderSizePixel = 0,
+		ZIndex = p27ZIndex + 1
+	}, p27)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 8)
+	}, v322)
+
+    local value16_29 = t2.value16
+    local uDim2_50 = UDim2.new(1, -90, 1, 0)
+    local uDim2_51 = UDim2.new(0, 12, 0, 0)
+    local TextSecondary = t2.value8.TextSecondary
+    local value10_5 = t2.value10
+    local Left3 = Enum.TextXAlignment.Left
+    local Center = Enum.TextYAlignment.Center
+    local ZIndex = v322.ZIndex
+    local v331 = value16_29("TextLabel", {
+		Name = "Label",
+		Size = uDim2_50,
+		Position = uDim2_51,
+		BackgroundTransparency = 1,
+		Text = p29,
+		TextColor3 = TextSecondary,
+		TextSize = 13,
+		Font = value10_5,
+		TextXAlignment = Left3,
+		TextYAlignment = Center,
+		ZIndex = ZIndex + 1
+	}, v322)
+    local value16_30 = t2.value16
+    local vector2_7 = Vector2.new(1, 0.5)
+    local uDim2_52 = UDim2.new(1, -12, 0.5, 0)
+    local uDim2_53 = UDim2.fromOffset(72, 24)
+    local value8Text3 = t2.value8.Text
+    local value10_6 = t2.value10
+    local Right = Enum.TextXAlignment.Right
+    local Center5 = Enum.TextYAlignment.Center
+    local v340 = v322.ZIndex + 1
+    local v341 = value16_30("TextLabel", {
+		Name = "ValueLabel",
+		AnchorPoint = vector2_7,
+		Position = uDim2_52,
+		Size = uDim2_53,
+		BackgroundTransparency = 1,
+		Text = "50",
+		TextColor3 = value8Text3,
+		TextSize = 13,
+		Font = value10_6,
+		TextXAlignment = Right,
+		TextYAlignment = Center5,
+		ZIndex = v340
+	}, v322)
+    local v342 = t2.value30(p28)
+
+    if type(v342) ~= "number" then
+        v342 = 50
+        t2.value32(p28, 50)
+    end
+
+    v341.Text = tostring(v342)
+    v322.MouseEnter:Connect(function()
+        t2.value18(v322, {
+			BackgroundColor3 = t2.value8.SurfaceHover
+		}, 0.1)
+        t2.value18(v331, {
+			TextColor3 = t2.value8.Text
+		}, 0.1)
+    end)
+    v322.MouseLeave:Connect(function()
+        t2.value18(v322, {
+			BackgroundColor3 = t2.value8.Item
+		}, 0.1)
+        t2.value18(v331, {
+			TextColor3 = t2.value8.TextSecondary
+		}, 0.1)
+    end)
+
+    return v322
+end
+t2.value53 = {}
+local function v105(p30, p31)
+    local value16_31 = t2.value16
+    local vector2_8 = Vector2.new(1, 0.5)
+    local uDim2_54 = UDim2.new(1, -10, 0.5, 0)
+    local uDim2_55 = UDim2.fromOffset(38, 20)
+    local Off = t2.value8.Off
+    local p30ZIndex = p30.ZIndex
+    local v404 = value16_31("TextButton", {
+		Name = "Toggle",
+		AnchorPoint = vector2_8,
+		Position = uDim2_54,
+		Size = uDim2_55,
+		BackgroundColor3 = Off,
+		BorderSizePixel = 0,
+		Text = "",
+		AutoButtonColor = false,
+		ZIndex = p30ZIndex + 1
+	}, p30)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 10)
+	}, v404)
+
+    local v405 = t2.value17(v404, t2.value8.Stroke, 1)
+    local value16_32 = t2.value16
+    local uDim2_56 = UDim2.fromOffset(16, 16)
+    local uDim2_57 = UDim2.new(0, 2, 0.5, -8)
+    local color3_39 = Color3.fromRGB(245, 245, 250)
+    local v410 = v404.ZIndex + 1
+    local v411 = value16_32("Frame", {
+		Name = "Knob",
+		Size = uDim2_56,
+		Position = uDim2_57,
+		BackgroundColor3 = color3_39,
+		BorderSizePixel = 0,
+		ZIndex = v410
+	}, v404)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 8)
+	}, v411)
+
+    local function v412(p32, p33)
+        for _, v in ipairs({
+			"RGB Sky",
+			"Always Night"
+		}) do
+            local value32 = t2.value32
+            local v668 = p33
+
+            if p33 then
+                v668 = v == p32
+            end
+
+            value32(v, v668)
+        end
+    end
+    local function v413()
+        for _, v in ipairs({ "Always Night" }) do
+            for _, descendant in ipairs(t2.value19:GetDescendants()) do
+                if descendant:IsA("TextButton") and (descendant.Parent and descendant.Parent.Name == "Option") then
+                    local Label = descendant.Parent:FindFirstChild("Label")
+
+                    if Label and v == Label.Text then
+                        local UIStroke = descendant:FindFirstChildOfClass("UIStroke")
+                        local Knob = descendant:FindFirstChild("Knob")
+                        local v676 = t2.value30(v)
+                        local v677 = v676 and t2.value8.On or t2.value8.Off
+                        local v678 = v676 and t2.value8.AccentLight or t2.value8.Stroke
+                        local v679 = v676 and UDim2.new(1, -18, 0.5, -8) or UDim2.new(0, 2, 0.5, -8)
+
+                        t2.value18(descendant, {
+							BackgroundColor3 = v677
+						}, 0.18)
+
+                        if UIStroke then
+                            t2.value18(UIStroke, {
+								Color = v678
+							}, 0.18)
+                        end
+
+                        if Knob then
+                            t2.value18(Knob, {
+								Position = v679
+							}, 0.18)
+                        end
+                    end
+                end
+            end
+        end
+    end
+    local function v414(p34, p35)
+        if p31 == "RGB Sky" or p31 == "Always Night" then
+            if p34 then
+                v412(p31, true)
+            else
+                v412(p31, false)
+            end
+        else
+            t2.value32(p31, p34)
+        end
+
+        if p31 == "Auto Upgrade Name Tag" then
+            t2.value47(p34)
+        elseif p31 == "Auto Rebirth" then
+            t2.value48(p34)
+        elseif p31 == "Auto Farm wins" then
+            t2.value49(p34)
+        elseif p31 == "Auto Spam Chat" then
+            t2.value50(p34)
+        elseif p31 == "No Clip" then
+            t2.value33 = p34
+
+            if not p34 then
+                t2.value35()
+            end
+        end
+
+        if p31 == "Always Night" then
+            v413()
+        end
+
+        local v682 = not p35 and 0.18 or 0
+
+        if p34 then
+            t2.value18(v404, {
+				BackgroundColor3 = t2.value8.On
+			}, v682)
+            t2.value18(v405, {
+				Color = t2.value8.AccentLight
+			}, v682)
+            t2.value18(v411, {
+				Position = UDim2.new(1, -18, 0.5, -8)
+			}, v682)
+
+            return
+        end
+
+        t2.value18(v404, {
+			BackgroundColor3 = t2.value8.Off
+		}, v682)
+        t2.value18(v405, {
+			Color = t2.value8.Stroke
+		}, v682)
+        t2.value18(v411, {
+			Position = UDim2.new(0, 2, 0.5, -8)
+		}, v682)
+    end
+
+    v414(t2.value30(p31), true)
+    t2.value53[p31] = t2.value53[p31] or {}
+
+    local function v415(p36)
+        v414(p36, false)
+    end
+
+    table.insert(t2.value53[p31], v415)
+    v404.MouseButton1Click:Connect(function()
+        local v684 = not t2.value30(p31)
+
+        if p31 == "RGB Sky" or p31 == "Always Night" then
+            if v684 then
+                v412(p31, true)
+            else
+                v412(p31, false)
+            end
+        else
+            t2.value32(p31, v684)
+        end
+
+        if p31 == "Always Night" then
+            v413()
+        end
+
+        v414(v684, false)
+
+        for _, v in ipairs(t2.value53[p31] or {}) do
+            if v ~= v415 then
+                v(v684)
+            end
+        end
+    end)
+
+    return v404
+end
+function t2.value54(p37)
+    if not t2.value22 then
+        return
+    end
+
+    if p37 then
+        local value18 = t2.value18
+        local value22_2 = t2.value22
+        local uDim2_58 = UDim2.fromOffset(675, 450)
+        local _Enum = Enum
+
+        value18(value22_2, {
+			Size = uDim2_58
+		}, 0.3, _Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
+
+        return
+    end
+
+    t2.value18(t2.value22, {
+		Size = UDim2.fromOffset(900, 600)
+	}, 0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
+end
+t2.value55 = false
+function t2.value56(p38, p39)
+    local _pairs = pairs
+
+    if not p39 then
+        p39 = {}
+    end
+
+    for v288, v289 in _pairs(p39) do
+        if v289 == p38 then
+            return v288
+        end
+    end
+
+    return nil
+end
+local function v106(p40)
+    t2.value8 = p40
+    t2.value55 = p40 == t2.value9
+
+    local function v433(p41, p42, p43)
+        if not p41 or not p41[p42] then
+            return
+        end
+
+        local v690 = t2.value56(p41[p42], p43)
+
+        if v690 and p40[v690] then
+            t2.value18(p41, {
+				[p42] = p40[v690]
+			}, 0.2)
+        end
+    end
+    local function u434(p44)
+        if not p44 then
+            return
+        end
+
+        if p44:IsA("UIStroke") then
+            v433(p44, "Color", t2.value7)
+            v433(p44, "Color", t2.value9)
+
+            return
+        end
+
+        if p44:IsA("GuiObject") then
+            v433(p44, "BackgroundColor3", t2.value7)
+            v433(p44, "BackgroundColor3", t2.value9)
+        end
+
+        if p44:IsA("TextLabel") or (p44:IsA("TextButton") or p44:IsA("TextBox")) then
+            v433(p44, "TextColor3", t2.value7)
+            v433(p44, "TextColor3", t2.value9)
+
+            if p44:IsA("TextBox") then
+                v433(p44, "PlaceholderColor3", t2.value7)
+                v433(p44, "PlaceholderColor3", t2.value9)
+            end
+        end
+
+        if p44:IsA("ImageLabel") then
+            v433(p44, "ImageColor3", t2.value7)
+            v433(p44, "ImageColor3", t2.value9)
+        end
+
+        local GetChildren = p44.GetChildren
+
+        for _, v in ipairs(GetChildren(p44)) do
+            u434(v)
+        end
+    end
+
+    for _, v in ipairs(pages or {}) do
+        if v:IsA("ScrollingFrame") then
+            t2.value18(v, {
+				ScrollBarImageColor3 = p40.Accent
+			}, 0.2)
+        end
+    end
+
+    if t2.value19 then
+        u434(t2.value19)
+    end
+end
+function t2.value57(p45, p46)
+    local value16_33 = t2.value16
+    local uDim2_59 = UDim2.new(1, 0, 0, 36)
+    local Item = t2.value8.Item
+    local p45ZIndex = p45.ZIndex
+    local v422 = value16_33("Frame", {
+		Name = "Option",
+		Size = uDim2_59,
+		BackgroundColor3 = Item,
+		BorderSizePixel = 0,
+		ZIndex = p45ZIndex + 1
+	}, p45)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 8)
+	}, v422)
+
+    local value16_34 = t2.value16
+    local uDim2_60 = UDim2.new(1, -65, 1, 0)
+    local uDim2_61 = UDim2.new(0, 12, 0, 0)
+    local TextSecondary = t2.value8.TextSecondary
+    local value10_7 = t2.value10
+    local Left4 = Enum.TextXAlignment.Left
+    local Center = Enum.TextYAlignment.Center
+    local v430 = v422.ZIndex + 1
+    local v431 = value16_34("TextLabel", {
+		Name = "Label",
+		Size = uDim2_60,
+		Position = uDim2_61,
+		BackgroundTransparency = 1,
+		Text = p46,
+		TextColor3 = TextSecondary,
+		TextSize = 13,
+		Font = value10_7,
+		TextXAlignment = Left4,
+		TextYAlignment = Center,
+		ZIndex = v430
+	}, v422)
+
+    v105(v422, p46)
+    v422.MouseEnter:Connect(function()
+        t2.value18(v422, {
+			BackgroundColor3 = t2.value8.SurfaceHover
+		}, 0.1)
+        t2.value18(v431, {
+			TextColor3 = t2.value8.Text
+		}, 0.1)
+    end)
+    v422.MouseLeave:Connect(function()
+        t2.value18(v422, {
+			BackgroundColor3 = t2.value8.Item
+		}, 0.1)
+        t2.value18(v431, {
+			TextColor3 = t2.value8.TextSecondary
+		}, 0.1)
+    end)
+
+    return v422
+end
+function t2.value58(p47, p48)
+    local value16_35 = t2.value16
+    local uDim2_62 = UDim2.new(1, 0, 0, 36)
+    local Item = t2.value8.Item
+    local p47ZIndex = p47.ZIndex
+    local v267 = value16_35("TextButton", {
+		Name = "Dropdown",
+		Size = uDim2_62,
+		BackgroundColor3 = Item,
+		BorderSizePixel = 0,
+		Text = "",
+		AutoButtonColor = false,
+		ZIndex = p47ZIndex + 1
+	}, p47)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 8)
+	}, v267)
+
+    local value16_36 = t2.value16
+    local uDim2_63 = UDim2.new(1, -45, 1, 0)
+    local uDim2_64 = UDim2.new(0, 12, 0, 0)
+    local TextSecondary = t2.value8.TextSecondary
+    local value10_8 = t2.value10
+    local Left5 = Enum.TextXAlignment.Left
+    local ZIndex = v267.ZIndex
+    local v275 = value16_36("TextLabel", {
+		Name = "Label",
+		Size = uDim2_63,
+		Position = uDim2_64,
+		BackgroundTransparency = 1,
+		Text = p48,
+		TextColor3 = TextSecondary,
+		TextSize = 13,
+		Font = value10_8,
+		TextXAlignment = Left5,
+		ZIndex = ZIndex + 1
+	}, v267)
+    local value16_37 = t2.value16
+    local vector2_9 = Vector2.new(1, 0.5)
+    local uDim2_65 = UDim2.new(1, -12, 0.5, 0)
+    local uDim2_66 = UDim2.fromOffset(20, 20)
+    local AccentLight4 = t2.value8.AccentLight
+    local value11 = t2.value11
+    local v282 = v267.ZIndex + 1
+    local v283 = value16_37("TextLabel", {
+		Name = "Arrow",
+		AnchorPoint = vector2_9,
+		Position = uDim2_65,
+		Size = uDim2_66,
+		BackgroundTransparency = 1,
+		Text = "âº",
+		TextColor3 = AccentLight4,
+		TextSize = 18,
+		Font = value11,
+		ZIndex = v282
+	}, v267)
+    local u284 = false
+
+    v267.MouseButton1Click:Connect(function()
+        u284 = not u284
+        t2.value18(v283, {
+			Rotation = not u284 and 0 or 90
+		}, 0.15)
+    end)
+    v267.MouseEnter:Connect(function()
+        t2.value18(v267, {
+			BackgroundColor3 = t2.value8.SurfaceHover
+		}, 0.1)
+        t2.value18(v275, {
+			TextColor3 = t2.value8.Text
+		}, 0.1)
+    end)
+    v267.MouseLeave:Connect(function()
+        t2.value18(v267, {
+			BackgroundColor3 = t2.value8.Item
+		}, 0.1)
+        t2.value18(v275, {
+			TextColor3 = t2.value8.TextSecondary
+		}, 0.1)
+    end)
+
+    return v267
+end
+function t2.value59(p49, p50)
+    local value16_38 = t2.value16
+    local uDim2_67 = UDim2.new(1, 0, 0, 36)
+    local color3_40 = Color3.fromRGB(30, 80, 150)
+    local color3_41 = Color3.fromRGB(255, 255, 255)
+    local value11 = t2.value11
+    local v297 = p49.ZIndex + 1
+    local v298 = value16_38("TextButton", {
+		Name = "ActionButton",
+		Size = uDim2_67,
+		BackgroundColor3 = color3_40,
+		Text = p50,
+		TextColor3 = color3_41,
+		TextSize = 13,
+		Font = value11,
+		AutoButtonColor = false,
+		ZIndex = v297
+	}, p49)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 8)
+	}, v298)
+
+    local v299 = t2.value17(v298, t2.value8.AccentDark, 1)
+
+    v298.MouseEnter:Connect(function()
+        t2.value18(v298, {
+			BackgroundColor3 = Color3.fromRGB(50, 110, 180)
+		}, 0.12)
+        t2.value18(v299, {
+			Color = t2.value8.StrokeHover
+		}, 0.12)
+    end)
+    v298.MouseLeave:Connect(function()
+        t2.value18(v298, {
+			BackgroundColor3 = Color3.fromRGB(30, 80, 150)
+		}, 0.12)
+        t2.value18(v299, {
+			Color = t2.value8.AccentDark
+		}, 0.12)
+    end)
+    v298.MouseButton1Down:Connect(function()
+        t2.value18(v298, {
+			Size = UDim2.new(1, -2, 0, 34)
+		}, 0.06)
+    end)
+    v298.MouseButton1Up:Connect(function()
+        t2.value18(v298, {
+			Size = UDim2.new(1, 0, 0, 36)
+		}, 0.06)
+    end)
+
+    if p50 == "Copy Discord Link" then
+        v298.MouseButton1Click:Connect(function()
+            if t2.value15(t2.value14) then
+                v298.Text = "Copied Link to Clipboard"
+                v298.TextColor3 = t2.value8.Success
+                v298.AutoButtonColor = false
+                task.delay(1.5, function()
+                    if v298.Parent then
+                        v298.Text = "Copy Discord Link"
+                        v298.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    end
+                end)
+            end
+        end)
+    end
+
+    return v298
+end
+t2.value60 = {}
+t2.value61 = 1
+t2.value62 = {
+	{
+		icon = "/",
+		name = "Search"
+	},
+	{
+		icon = "ð¤",
+		name = "Player Movement"
+	},
+	{
+		icon = "â¡",
+		name = "Auto"
+	},
+	{
+		icon = "â¨",
+		name = "Visuals"
+	},
+	{
+		icon = "â",
+		name = "Settings"
+	}
+}
+function t2.value63(p51, p52)
+    t2.value18(p51, {
+		BackgroundColor3 = p52 and t2.value8.Accent or t2.value8.Surface
+	}, 0.15)
+
+    local UIStroke = p51:FindFirstChildOfClass("UIStroke")
+
+    if UIStroke then
+        t2.value18(UIStroke, {
+			Color = p52 and t2.value8.AccentLight or t2.value8.Stroke
+		}, 0.15)
+    end
+end
+local function v107(p53)
+    t2.value61 = p53
+    for v504, v505 in ipairs(t2.value60) do
+
+        v505.Visible = v504 == p53
+    end
+    for i = 1, #t2.value62 do
+        local v507 = i
+        local v508 = t2.value23:FindFirstChild("Tab" .. v507)
+
+        if v508 then
+            t2.value63(v508, v507 == p53)
+        end
+    end
+end
+for v110, v111 in ipairs(t2.value62) do
+
+    local v112 = v110
+    local value16_39 = t2.value16
+    local v114 = "Tab" .. v112
+    local uDim2_68 = UDim2.new(1, -20, 0, 52)
+    local uDim2_69 = UDim2.new(0, 10, 0, 4 + (v112 - 1) * 62)
+    local v117 = v112 == 1 and t2.value8.Accent or t2.value8.Surface
+    local icon = v111.icon
+    local value8Text4 = t2.value8.Text
+    local value11 = t2.value11
+    local t4 = {
+		Name = v114,
+		Size = uDim2_68,
+		Position = uDim2_69,
+		BackgroundColor3 = v117,
+		BorderSizePixel = 0,
+		Text = icon,
+		TextColor3 = value8Text4,
+		TextSize = 21,
+		Font = value11,
+		AutoButtonColor = false,
+		ZIndex = 5
+	}
+    local value1 = t1.value1
+    local v123 = value16_39("TextButton", t4, t2.value23)
+
+    t2.value16("UICorner", {
+		CornerRadius = UDim.new(0, 10)
+	}, v123)
+
+    local value17 = t2.value17
+    local v125 = v112 == 1 and t2.value8.AccentLight or t2.value8.Stroke
+
+    t1.value1 = value1
+    value17(v123, v125, v112 ~= 1 and 1 or 1.2)
+    v123.MouseButton1Click:Connect(function()
+        v107(v112)
+    end)
+    v123.MouseEnter:Connect(function()
+        if t2.value61 ~= v112 then
+            t2.value18(v123, {
+				BackgroundColor3 = t2.value8.SurfaceHover
+			}, 0.1)
+        end
+    end)
+    v123.MouseLeave:Connect(function()
+        if t2.value61 ~= v112 then
+            t2.value18(v123, {
+				BackgroundColor3 = t2.value8.Surface
+			}, 0.1)
+        end
+    end)
+end
+for i, v in ipairs(t3) do
+    local v128 = v
+    local v129 = i
+
+    if v129 == 1 then
+        v128 = {}
+
+        for _, v2 in ipairs(t3) do
+            for _, v3 in ipairs(v2) do
+                table.insert(v128, v3)
+            end
+        end
+    end
+
+    local value16_40 = t2.value16
+    local v135 = "Page" .. v129
+    local uDim2_70 = UDim2.new(1, -32, 1, -76)
+    local uDim2_71 = UDim2.new(0, 16, 0, 70)
+
+    t1.value1 = t2.value8.Accent
+
+    local uDim2_72 = UDim2.new()
+    local AutomaticSizeY2 = Enum.AutomaticSize.Y
+    local ScrollingDirectionY2 = Enum.ScrollingDirection.Y
+    local v141 = v129 == 1
+    local v142 = value16_40("ScrollingFrame", {
+		Name = v135,
+		Size = uDim2_70,
+		Position = uDim2_71,
+		BackgroundTransparency = 1,
+		BorderSizePixel = 0,
+		ScrollBarThickness = 4,
+		ScrollBarImageColor3 = t1.value1,
+		ScrollBarImageTransparency = 0.2,
+		CanvasSize = uDim2_72,
+		AutomaticCanvasSize = AutomaticSizeY2,
+		ScrollingDirection = ScrollingDirectionY2,
+		Visible = v141,
+		ZIndex = 4
+	}, t2.value25)
+
+    t2.value16("UIPadding", {
+		PaddingBottom = UDim.new(0, 12)
+	}, v142)
+
+    local value16_41 = t2.value16
+    local uDim = UDim.new(0, 10)
+    local SortOrderLayoutOrder = Enum.SortOrder.LayoutOrder
+
+    value16_41("UIListLayout", {
+		Padding = uDim,
+		SortOrder = SortOrderLayoutOrder
+	}, v142)
+    t2.value60[v129] = v142
+
+    for i2, v4 in ipairs(v128) do
+        local v148 = i2
+
+        if v4.customContent == "keyInfo" then
+            local value16_42 = t2.value16
+            local uDim2_73 = UDim2.new(1, 0, 0, 0)
+            local AutomaticSizeY3 = Enum.AutomaticSize.Y
+
+            t1.value1 = t2.value8.Surface
+
+            local ZIndex = v142.ZIndex
+            local v153 = value16_42("Frame", {
+				Name = "Section",
+				Size = uDim2_73,
+				AutomaticSize = AutomaticSizeY3,
+				BackgroundColor3 = t1.value1,
+				BorderSizePixel = 0,
+				ZIndex = ZIndex + 1
+			}, v142)
+
+            t2.value16("UICorner", {
+				CornerRadius = UDim.new(0, 12)
+			}, v153)
+            t2.value17(v153, t2.value8.Stroke, 1)
+
+            local value16_43 = t2.value16
+            local uDim3 = UDim.new(0, 12)
+            local uDim4 = UDim.new(0, 12)
+
+            t1.value1 = UDim.new(0, 12)
+
+            local uDim5 = UDim.new(0, 12)
+
+            value16_43("UIPadding", {
+				PaddingTop = uDim3,
+				PaddingBottom = uDim4,
+				PaddingLeft = t1.value1,
+				PaddingRight = uDim5
+			}, v153)
+
+            local value16_44 = t2.value16
+            local uDim6 = UDim.new(0, 7)
+            local SortOrderLayoutOrder2 = Enum.SortOrder.LayoutOrder
+
+            value16_44("UIListLayout", {
+				Padding = uDim6,
+				SortOrder = SortOrderLayoutOrder2
+			}, v153)
+
+            local value16_45 = t2.value16
+
+            t1.value1 = UDim2.new(1, 0, 0, 28)
+
+            local title = v4.title
+            local value8Text5 = t2.value8.Text
+            local value11 = t2.value11
+            local Left6 = Enum.TextXAlignment.Left
+            local v166 = v153.ZIndex + 1
+
+            value16_45("TextLabel", {
+				Name = "Title",
+				Size = t1.value1,
+				BackgroundTransparency = 1,
+				Text = title,
+				TextColor3 = value8Text5,
+				TextSize = 15,
+				Font = value11,
+				TextXAlignment = Left6,
+				LayoutOrder = 1,
+				ZIndex = v166
+			}, v153)
+
+            function t1.value1(p54, p55, p56)
+                local value16_46 = t2.value16
+                local uDim2_74 = UDim2.new(1, 0, 0, 50)
+                local Item = t2.value8.Item
+                local ZIndex4 = v153.ZIndex
+                local v516 = value16_46("Frame", {
+					Name = "AccountRow",
+					Size = uDim2_74,
+					BackgroundColor3 = Item,
+					BorderSizePixel = 0,
+					LayoutOrder = p56,
+					ZIndex = ZIndex4 + 1
+				}, v153)
+
+                t2.value16("UICorner", {
+					CornerRadius = UDim.new(0, 8)
+				}, v516)
+
+                local value16_47 = t2.value16
+                local uDim7 = UDim.new(0, 8)
+                local uDim8 = UDim.new(0, 8)
+                local uDim9 = UDim.new(0, 12)
+                local uDim10 = UDim.new(0, 12)
+
+                value16_47("UIPadding", {
+					PaddingTop = uDim7,
+					PaddingBottom = uDim8,
+					PaddingLeft = uDim9,
+					PaddingRight = uDim10
+				}, v516)
+
+                local value16_48 = t2.value16
+                local uDim2_75 = UDim2.new(1, 0, 0, 18)
+                local TextMuted4 = t2.value8.TextMuted
+                local value10_9 = t2.value10
+                local Left7 = Enum.TextXAlignment.Left
+                local ZIndex5 = v153.ZIndex
+
+                value16_48("TextLabel", {
+					Name = "Label",
+					Size = uDim2_75,
+					BackgroundTransparency = 1,
+					Text = p54,
+					TextColor3 = TextMuted4,
+					TextSize = 10,
+					Font = value10_9,
+					TextXAlignment = Left7,
+					ZIndex = ZIndex5 + 1
+				}, v516)
+
+                local value16_49 = t2.value16
+                local uDim2_76 = UDim2.new(1, 0, 0, 20)
+                local uDim2_77 = UDim2.new(0, 0, 0, 22)
+                local value8Text6 = t2.value8.Text
+                local value11_2 = t2.value11
+                local Left8 = Enum.TextXAlignment.Left
+                local v534 = v153.ZIndex + 1
+
+                value16_49("TextLabel", {
+					Name = "Value",
+					Size = uDim2_76,
+					Position = uDim2_77,
+					BackgroundTransparency = 1,
+					Text = p55,
+					TextColor3 = value8Text6,
+					TextSize = 13,
+					Font = value11_2,
+					TextXAlignment = Left8,
+					ZIndex = v534
+				}, v516)
+
+                return v516
+            end
+
+            t1.value1("YOUR KEY", "SCRIPTLY-ACCESS-3830", 2)
+
+            local n1 = 3
+
+            t1.value1("STATUS", "Active â", n1)
+
+            local v168 = n1 + 1
+
+            t1.value1("EXPIRES", "August 27, 2026", v168)
+
+            local _ = v168 + 1
+
+            v153.LayoutOrder = v148
+        else
+            (function(p57, p58)
+                local value16_50 = t2.value16
+                local uDim2_78 = UDim2.new(1, 0, 0, 0)
+                local AutomaticSizeY4 = Enum.AutomaticSize.Y
+                local Surface3 = t2.value8.Surface
+                local p57ZIndex = p57.ZIndex
+                local v444 = value16_50("Frame", {
+					Name = "Section",
+					Size = uDim2_78,
+					AutomaticSize = AutomaticSizeY4,
+					BackgroundColor3 = Surface3,
+					BorderSizePixel = 0,
+					ZIndex = p57ZIndex + 1
+				}, p57)
+                t2.value16("UICorner", {
+					CornerRadius = UDim.new(0, 12)
+				}, v444)
+                t2.value17(v444, t2.value8.Stroke, 1)
+                local value16_51 = t2.value16
+                local uDim11 = UDim.new(0, 12)
+                local uDim12 = UDim.new(0, 12)
+                local uDim13 = UDim.new(0, 12)
+                local uDim14 = UDim.new(0, 12)
+                value16_51("UIPadding", {
+					PaddingTop = uDim11,
+					PaddingBottom = uDim12,
+					PaddingLeft = uDim13,
+					PaddingRight = uDim14
+				}, v444)
+                local value16_52 = t2.value16
+                local uDim15 = UDim.new(0, 7)
+                local SortOrderLayoutOrder3 = Enum.SortOrder.LayoutOrder
+                value16_52("UIListLayout", {
+					Padding = uDim15,
+					SortOrder = SortOrderLayoutOrder3
+				}, v444)
+                local n2 = 1
+                local value16_53 = t2.value16
+                local uDim2_79 = UDim2.new(1, 0, 0, 28)
+                local title = p58.title
+                local value8Text7 = t2.value8.Text
+                local value11 = t2.value11
+                local Left9 = Enum.TextXAlignment.Left
+                local v460 = v444.ZIndex + 1
+                value16_53("TextLabel", {
+					Name = "Title",
+					Size = uDim2_79,
+					BackgroundTransparency = 1,
+					Text = title,
+					TextColor3 = value8Text7,
+					TextSize = 15,
+					Font = value11,
+					TextXAlignment = Left9,
+					LayoutOrder = n2,
+					ZIndex = v460
+				}, v444)
+                local v461 = n2 + 1
+                for v464, v465 in ipairs(p58.items or {}) do
+
+                    local v466 = type(v465) == "string" and v465 or v465.text
+                    local v467 = type(v465) == "string" and v466 or (v465.stateName or v466)
+                    local v468 = if type(v465) ~= "string" then v465.type or "option" else "option"
+                    local v469
+
+                    if v468 == "slider" then
+                        v469 = t2.value51(v444, v466, v465.min, v465.max)
+                    elseif v468 == "number" then
+                        v469 = t2.value52(v444, v467, v466)
+                    elseif v468 == "display" then
+                        local value16_54 = t2.value16
+                        local uDim2_80 = UDim2.new(1, 0, 0, 28)
+                        local ZIndex = v444.ZIndex
+
+                        v469 = value16_54("Frame", {
+							Name = "Display",
+							Size = uDim2_80,
+							BackgroundTransparency = 1,
+							LayoutOrder = v461,
+							ZIndex = ZIndex + 1
+						}, v444)
+
+                        local value16_55 = t2.value16
+                        local uDim2_81 = UDim2.new(1, -10, 1, 0)
+                        local uDim2_82 = UDim2.new(0, 0, 0, 0)
+                        local value8Text8 = t2.value8.Text
+                        local value10_10 = t2.value10
+                        local Left10 = Enum.TextXAlignment.Left
+                        local ZIndex6 = v469.ZIndex
+
+                        value16_55("TextLabel", {
+							Name = "Label",
+							Size = uDim2_81,
+							Position = uDim2_82,
+							BackgroundTransparency = 1,
+							Text = v466,
+							TextColor3 = value8Text8,
+							TextSize = 14,
+							Font = value10_10,
+							TextXAlignment = Left10,
+							ZIndex = ZIndex6 + 1
+						}, v469)
+
+                        local value16_56 = t2.value16
+                        local uDim2_83 = UDim2.new(0, 50, 1, 0)
+                        local uDim2_84 = UDim2.new(1, -50, 0, 0)
+                        local TextMuted5 = t2.value8.TextMuted
+                        local value10_11 = t2.value10
+                        local Right = Enum.TextXAlignment.Right
+                        local v486 = v469.ZIndex + 1
+
+                        value16_56("TextLabel", {
+							Name = "Value",
+							Size = uDim2_83,
+							Position = uDim2_84,
+							BackgroundTransparency = 1,
+							Text = v466,
+							TextColor3 = TextMuted5,
+							TextSize = 14,
+							Font = value10_11,
+							TextXAlignment = Right,
+							ZIndex = v486
+						}, v469)
+                    else
+                        v469 = t2.value57(v444, v466)
+                    end
+
+                    v469.LayoutOrder = v461
+                    v461 += 1
+                end
+                if p58.dropdown then
+                    t2.value58(v444, p58.dropdown).LayoutOrder = v461
+                    v461 += 1
+                end
+                if p58.buttonText then
+                    t2.value59(v444, p58.buttonText).LayoutOrder = v461
+                    v461 += 1
+                end
+                for _, v5 in ipairs(p58.subSections or {}) do
+                    local value16_57 = t2.value16
+                    local uDim2_85 = UDim2.new(1, 0, 0, 22)
+                    local name = v5.name
+                    local AccentLight5 = t2.value8.AccentLight
+                    local value11_3 = t2.value11
+                    local Left11 = Enum.TextXAlignment.Left
+                    local v495 = v444.ZIndex + 1
+
+                    value16_57("TextLabel", {
+						Name = "SubTitle",
+						Size = uDim2_85,
+						BackgroundTransparency = 1,
+						Text = name,
+						TextColor3 = AccentLight5,
+						TextSize = 12,
+						Font = value11_3,
+						TextXAlignment = Left11,
+						LayoutOrder = v461,
+						ZIndex = v495
+					}, v444)
+                    v461 += 1
+
+                    for _, v6 in ipairs(v5.items or {}) do
+                        t2.value57(v444, v6).LayoutOrder = v461
+                        v461 += 1
+                    end
+                end
+
+                return v444
+            end)(v142, v4).LayoutOrder = v148
+        end
+    end
+end
+function t2.value64(p59, p60, p61)
+    local _math = math
+    local v539 = p61 * p60
+    local v540 = (p59 % 360 + 360) % 360
+    local v541 = v539 * (1 - _math.abs(v540 / 60 % 2 - 1))
+    local v542 = p61 - v539
+    local v543, v544, n3
+
+    if v540 < 60 then
+        v543 = v539
+        v544 = v541
+        n3 = 0
+    elseif v540 < 120 then
+        n3 = 0
+        v543 = v541
+        v544 = v539
+    elseif v540 < 180 then
+        v544 = v539
+        n3 = v541
+        v543 = 0
+    elseif v540 < 240 then
+        v543 = 0
+        v544 = v541
+        n3 = v539
+    elseif v540 < 300 then
+        v543 = v541
+        v544 = 0
+        n3 = v539
+    else
+        v544 = 0
+        n3 = v541
+        v543 = v539
+    end
+
+    return Color3.fromRGB(math.floor((v543 + v542) * 255), math.floor((v544 + v542) * 255), (math.floor((n3 + v542) * 255)))
+end
+t2.value65 = nil
+t2.value66 = nil
+function t2.value67()
+    local Lighting = game:GetService("Lighting")
+
+    if t2.value65 == nil then
+        local _ = Lighting.FogStart
+        local _ = Lighting.FogEnd
+        local _ = Lighting.FogColor
+    end
+
+    Lighting.FogStart = 100000
+    Lighting.FogEnd = 1000000
+    Lighting.FogColor = Color3.fromRGB(255, 255, 255)
+end
+function t2.value68()
+    if t2.value65 == nil then
+        return
+    end
+
+    local Lighting = game:GetService("Lighting")
+
+    Lighting.FogStart = t2.value65.FogStart
+    Lighting.FogEnd = t2.value65.FogEnd
+    Lighting.FogColor = t2.value65.FogColor
+    t2.value65 = nil
+end
+t2.value69 = nil
+t2.value70 = nil
+t2.value71 = 0
+t2.value66 = nil
+t2.value72 = nil
+function t2.value72()
+    local Lighting = game:GetService("Lighting")
+
+    if t2.value66 ~= nil then
+        return
+    end
+
+    local _ = Lighting.ClockTime
+    local _ = Lighting.Ambient
+    local _ = Lighting.OutdoorAmbient
+    local _ = Lighting.Brightness
+    local _ = Lighting.FogColor
+end
+function t1.value1()
+    for _, v in ipairs(t2.value70) do
+        if v and v.Parent then
+            v:Destroy()
+        end
+    end
+
+    t2.value70 = {}
+end
+function t2.value73()
+    if t2.value66 == nil then
+        return
+    end
+
+    local Lighting = game:GetService("Lighting")
+
+    Lighting.ClockTime = t2.value66.ClockTime
+    Lighting.Ambient = t2.value66.Ambient
+    Lighting.OutdoorAmbient = t2.value66.OutdoorAmbient
+    Lighting.Brightness = t2.value66.Brightness
+    Lighting.FogColor = t2.value66.FogColor
+
+    local RGBSkyCorrection = Lighting:FindFirstChild("RGBSkyCorrection")
+
+    if RGBSkyCorrection then
+        RGBSkyCorrection:Destroy()
+    end
+
+    t2.value66 = nil
+end
+function t2.value74()
+    t2.value72()
+
+    local Lighting = game:GetService("Lighting")
+    local v560 = t2.value64(t2.value71, 1, 1)
+    local v561 = t2.value64((t2.value71 + 45) % 360, 1, 1)
+
+    Lighting.Ambient = v560
+    Lighting.OutdoorAmbient = v561
+    Lighting.Brightness = 2.2
+
+    local RGBSkyCorrection = Lighting:FindFirstChild("RGBSkyCorrection")
+
+    if not RGBSkyCorrection then
+        RGBSkyCorrection = Instance.new("ColorCorrectionEffect")
+        RGBSkyCorrection.Name = "RGBSkyCorrection"
+        RGBSkyCorrection.Parent = Lighting
+    end
+
+    RGBSkyCorrection.TintColor = v560
+    RGBSkyCorrection.Contrast = 0.12
+    RGBSkyCorrection.Saturation = 0.2
+    RGBSkyCorrection.Brightness = 0.12
+end
+function t2.value75()
+    local RGBSkyCorrection = game:GetService("Lighting"):FindFirstChild("RGBSkyCorrection")
+
+    if RGBSkyCorrection then
+        RGBSkyCorrection:Destroy()
+    end
+end
+function t2.value76()
+    t2.value72()
+
+    local Lighting = game:GetService("Lighting")
+
+    Lighting.ClockTime = 0.5
+    Lighting.Ambient = Color3.fromRGB(30, 35, 60)
+    Lighting.OutdoorAmbient = Color3.fromRGB(25, 30, 55)
+    Lighting.Brightness = 0.8
+    Lighting.FogColor = Color3.fromRGB(35, 40, 55)
+end
+t2.value69 = 0
+t2.value70 = {}
+function t2.value77()
+    local Character = t2.value5.Character
+
+    if not Character then
+        return
+    end
+
+    for _, v in ipairs({
+		"Head",
+		"Torso",
+		"LeftUpperArm",
+		"RightUpperArm",
+		"LeftLowerArm",
+		"RightLowerArm",
+		"LeftHand",
+		"RightHand",
+		"LeftUpperLeg",
+		"RightUpperLeg",
+		"LeftLowerLeg",
+		"RightLowerLeg",
+		"LeftFoot",
+		"RightFoot"
+	}) do
+        local v7 = Character:FindFirstChild(v)
+
+        if v7 and v7:IsA("BasePart") and not v7:FindFirstChild("RainbowTrail") then
+            local Attachment = Instance.new("Attachment")
+
+            Attachment.Name = "TrailAttachment0"
+            Attachment.Position = Vector3.new(0, v7.Size.Y / 2, 0)
+            Attachment.Parent = v7
+
+            local Attachment2 = Instance.new("Attachment")
+
+            Attachment2.Name = "TrailAttachment1"
+            Attachment2.Position = Vector3.new(0, -v7.Size.Y / 2, 0)
+            Attachment2.Parent = v7
+
+            local Trail = Instance.new("Trail")
+
+            Trail.Name = "RainbowTrail"
+            Trail.Attachment0 = Attachment
+            Trail.Attachment1 = Attachment2
+            Trail.Lifetime = 1.5
+            Trail.MinLength = 0
+            Trail.MaxLength = 0
+            Trail.FaceCamera = false
+            Trail.Transparency = NumberSequence.new({
+				NumberSequenceKeypoint.new(0, 0.2),
+				NumberSequenceKeypoint.new(0.5, 0.1),
+				NumberSequenceKeypoint.new(1, 1)
+			})
+            Trail.Parent = v7
+            table.insert(t2.value70, Trail)
+        end
+    end
+end
+t2.value78 = t1.value1
+function t2.value79()
+    for _, v in ipairs(t2.value70) do
+        if v and v.Parent then
+            local v566 = t2.value69 % 360
+            local v567 = (t2.value69 + 60) % 360
+            local v568 = (t2.value69 + 120) % 360
+
+            local function v569(p62)
+                local _math = math
+                local v697 = p62 % 360
+                local v698 = 1 * (1 - _math.abs(v697 / 60 % 2 - 1))
+                local n4, n5, v701
+
+                if v697 < 60 then
+                    n4 = 0
+                    n5 = 1
+                    v701 = v698
+                elseif v697 < 120 then
+                    v701 = 1
+                    n4 = 0
+                    n5 = v698
+                elseif v697 < 180 then
+                    v701 = 1
+                    n4 = v698
+                    n5 = 0
+                elseif v697 < 240 then
+                    v701 = v698
+                    n5 = 0
+                    n4 = 1
+                elseif v697 < 300 then
+                    v701 = 0
+                    n5 = v698
+                    n4 = 1
+                else
+                    v701 = 0
+                    n4 = v698
+                    n5 = 1
+                end
+
+                return Color3.fromRGB(math.floor(n5 * 255), math.floor(v701 * 255), (math.floor(n4 * 255)))
+            end
+
+            v.Color = ColorSequence.new({
+				ColorSequenceKeypoint.new(0, v569(v566)),
+				ColorSequenceKeypoint.new(0.5, v569(v567)),
+				ColorSequenceKeypoint.new(1, v569(v568))
+			})
+        end
+    end
+end
+task.spawn(function()
+    local n6 = 0
+
+    while true do
+        if t2.value30("Anti-AFK") then
+            local Character = t2.value1.LocalPlayer.Character
+
+            if Character then
+                local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
+                local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+                if HumanoidRootPart and Humanoid then
+                    n6 = (n6 + 30) % 360
+
+                    local v584 = math.rad(n6)
+                    local vector3 = Vector3.new(math.cos(v584) * 20, 0, math.sin(v584) * 20)
+
+                    Humanoid:MoveTo(HumanoidRootPart.Position + vector3)
+
+                    local v586 = math.rad((math.random(-45, 45)))
+
+                    HumanoidRootPart.CFrame = CFrame.new(HumanoidRootPart.Position) * CFrame.Angles(0, v586, 0)
+                end
+            end
+        end
+
+        task.wait(1.5)
+    end
+end)
+t2.value80 = nil
+t2.value81 = nil
+t2.value82 = nil
+t2.value81 = nil
+function t2.value83()
+    if t2.value81 then
+        t2.value81:Disconnect()
+        t2.value81 = nil
+    end
+
+    if t2.value80 then
+        t2.value80:Destroy()
+        t2.value80 = nil
+    end
+
+    if t2.value82 then
+        t2.value82:Destroy()
+        t2.value82 = nil
+    end
+
+    local Character = t2.value5.Character
+    local v588 = Character and Character:FindFirstChildOfClass("Humanoid")
+
+    if v588 then
+        v588.PlatformStand = false
+        v588.AutoRotate = true
+    end
+end
+function t2.value84()
+    t2.value83()
+
+    local Character = t2.value5.Character
+    local v590 = Character and Character:FindFirstChildOfClass("Humanoid")
+    local v591 = Character and Character:FindFirstChild("HumanoidRootPart")
+
+    if not v590 or not v591 then
+        return
+    end
+
+    t2.value80 = Instance.new("BodyVelocity")
+    t2.value80.Name = "ScriptlyFlyVelocity"
+    t2.value80.MaxForce = Vector3.new(1e999, 1e999, 1e999)
+    t2.value80.Velocity = Vector3.zero
+    t2.value80.Parent = v591
+    t2.value82 = Instance.new("BodyGyro")
+    t2.value82.Name = "ScriptlyFlyGyro"
+    t2.value82.MaxTorque = Vector3.new(1e999, 1e999, 1e999)
+    t2.value82.P = 9000
+    t2.value82.D = 500
+    t2.value82.CFrame = v591.CFrame
+    t2.value82.Parent = v591
+    v590.PlatformStand = true
+    t2.value4.RenderStepped:Connect(function()
+        if not t2.value30("Fly") or (not t2.value80 or not t2.value80.Parent) then
+            return
+        end
+
+        local CurrentCamera = workspace.CurrentCamera
+
+        if not CurrentCamera then
+            return
+        end
+
+        local zero = Vector3.zero
+
+        if t2.value2:IsKeyDown(Enum.KeyCode.W) then
+            zero += CurrentCamera.CFrame.LookVector
+        end
+
+        if t2.value2:IsKeyDown(Enum.KeyCode.S) then
+            zero -= CurrentCamera.CFrame.LookVector
+        end
+
+        if t2.value2:IsKeyDown(Enum.KeyCode.D) then
+            zero += CurrentCamera.CFrame.RightVector
+        end
+
+        if t2.value2:IsKeyDown(Enum.KeyCode.A) then
+            zero -= CurrentCamera.CFrame.RightVector
+        end
+
+        if t2.value2:IsKeyDown(Enum.KeyCode.Space) then
+            zero += Vector3.yAxis
+        end
+
+        if t2.value2:IsKeyDown(Enum.KeyCode.LeftControl) then
+            zero -= Vector3.yAxis
+        end
+
+        t2.value80.Velocity = zero.Magnitude > 0 and zero.Unit * 60 or Vector3.zero
+        t2.value82.CFrame = CFrame.lookAt(v591.Position, v591.Position + CurrentCamera.CFrame.LookVector)
+    end)
+end
+task.spawn(function()
+    local v592 = false
+
+    while true do
+        local v593 = t2.value30("Fly")
+
+        if v593 ~= v592 then
+            if v593 then
+                t2.value84()
+            else
+                t2.value83()
+            end
+
+            v592 = v593
+        end
+
+        if v593 and not t2.value80 or not t2.value80.Parent then
+            t2.value84()
+        end
+
+        task.wait(0.1)
+    end
+end)
+t2.value85 = false
+t2.value86 = false
+t2.value87 = false
+task.spawn(function()
+    task.wait(0.05)
+
+    while true do
+        task.wait(0.03)
+
+        if t2.value60 and #t2.value60 > 0 then
+            local v594 = t2.value30("Compact View")
+
+            if v594 ~= t2.value85 then
+                t2.value54(v594)
+                t2.value85 = v594
+            end
+
+            local v595 = t2.value30("Dark Mode")
+
+            if v595 ~= t2.value86 then
+                if v595 then
+                    v106(t2.value9)
+                else
+                    v106(t2.value7)
+                end
+
+                t2.value86 = v595
+            end
+
+            if t2.value30("No Fog") then
+                t2.value67()
+            else
+                t2.value68()
+            end
+
+            if t2.value30("RGB Sky") and t2.value30("Always Night") then
+                t2.value32("Always Night", false)
+                t2.value32("RGB Sky", true)
+            end
+
+            if t2.value30("RGB Sky") then
+                t2.value71 = (t2.value71 + 2) % 360
+                t2.value74()
+            elseif t2.value30("Always Night") then
+                t2.value76()
+            else
+                t2.value73()
+                t2.value75()
+            end
+
+            local v596 = t2.value30("Rainbow Trail")
+
+            if v596 ~= t2.value87 then
+                if v596 then
+                    t2.value77()
+                else
+                    t2.value78()
+                end
+
+                t2.value87 = v596
+            end
+
+            if v596 and t2.value5.Character then
+                local v597 = false
+
+                for _, v in ipairs(t2.value70) do
+                    if v and v.Parent then
+                        v597 = true
+
+                        break
+                    end
+                end
+
+                if not v597 then
+                    t2.value78()
+                    t2.value77()
+                end
+            end
+
+            if v596 then
+                t2.value69 = (t2.value69 + 3) % 360
+                t2.value79()
+            end
+        end
+    end
+end)
+local function v170(p63)
+    local v601 = p63:lower():gsub("^%s+", ""):gsub("%s+$", "")
+
+    t2.value28.Visible = v601 ~= ""
+
+    local function u602(p64)
+        if (p64:IsA("TextLabel") or (p64:IsA("TextButton") or p64:IsA("TextBox"))) and p64.Text:lower():find(v601, 1, true) then
+            return true
+        end
+
+        local GetChildren = p64.GetChildren
+
+        for _, v in ipairs(GetChildren(p64)) do
+            if u602(v) then
+                return true
+            end
+        end
+
+        return false
+    end
+
+    for _, v in ipairs(t2.value60) do
+        local GetChildren = v.GetChildren
+
+        for _, v8 in ipairs(GetChildren(v)) do
+            if v8:IsA("Frame") and v8.Name == "Section" then
+                local Title = v8:FindFirstChild("Title")
+                local v609 = Title
+                local v610 = v601 == ""
+
+                if Title then
+                    v609 = Title.Text:lower():find(v601, 1, true)
+                end
+
+                if v609 then
+                    v610 = true
+                end
+
+                local v611 = false
+
+                for _, child in ipairs(v8:GetChildren()) do
+                    if child:IsA("GuiObject") and child ~= Title then
+                        local v614 = v610 or u602(child)
+
+                        child.Visible = v614
+
+                        if v614 then
+                            v611 = true
+                        end
+                    end
+                end
+
+                v8.Visible = v601 == "" or (v610 or v611)
+            end
+        end
+    end
+end
+t2.value27:GetPropertyChangedSignal("Text"):Connect(function()
+    v170(t2.value27.Text)
+end)
+local value16_58 = t2.value16
+local uDim2_86 = UDim2.fromOffset(24, 24)
+local vector2_10 = Vector2.new(1, 1)
+local uDim2_87 = UDim2.new(1, -5, 1, -5)
+t1.value1 = t2.value8.Accent
+t2.value88 = value16_58("TextButton", {
+	Name = "ResizeHandle",
+	Size = uDim2_86,
+	AnchorPoint = vector2_10,
+	Position = uDim2_87,
+	BackgroundTransparency = 1,
+	Text = "â¢",
+	TextColor3 = t1.value1,
+	TextSize = 15,
+	Font = t2.value11,
+	AutoButtonColor = false,
+	ZIndex = 50
+}, t2.value22)
+t2.value89 = t2.value17(t2.value88, t2.value8.AccentDark, 1, 0.5)
+t2.value90 = false
+t2.value91 = nil
+t2.value92 = nil
+t2.value88.InputBegan:Connect(function(input)
+    if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.Touch then
+        return
+    end
+
+    t2.value90 = true
+    t2.value91 = input.Position
+    t2.value92 = t2.value22.AbsoluteSize
+    t2.value18(t2.value88, {
+		TextColor3 = t2.value8.AccentLight
+	}, 0.1)
+    t2.value18(t2.value89, {
+		Color = t2.value8.AccentLight,
+		Transparency = 0
+	}, 0.1)
+end)
+t2.value93 = false
+t2.value94 = UDim2.fromOffset(900, 600)
+t2.value95 = false
+t2.value96 = nil
+t2.value97 = nil
+function t2.value98(p65)
+    if t2.value90 then
+        return
+    end
+
+    t2.value95 = true
+    t2.value96 = p65.Position
+    t2.value97 = t2.value22.Position
+end
+function t1.value1(p66)
+    if not t2.value95 then
+        return
+    end
+
+    local v618 = p66.Position - t2.value96
+
+    t2.value22.Position = UDim2.new(t2.value97.X.Scale, t2.value97.X.Offset + v618.X, t2.value97.Y.Scale, t2.value97.Y.Offset + v618.Y)
+end
+t2.value99 = t1.value1
+function t1.value1(p67)
+    p67.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            t2.value98(input)
+        end
+    end)
+end
+t1.value1(t2.value24)
+t1.value1(v85)
+t1.value1 = t2.value2.InputChanged
+t1.value1:Connect(function(p68)
+    if p68.UserInputType ~= Enum.UserInputType.MouseMovement and p68.UserInputType ~= Enum.UserInputType.Touch then
+        return
+    end
+
+    if t2.value90 then
+        local v621 = p68.Position - t2.value91
+        local v622 = math.clamp(t2.value92.X + v621.X, t2.value20.X, t2.value21.X)
+        local v623 = math.clamp(t2.value92.Y + v621.Y, t2.value20.Y, t2.value21.Y)
+
+        t2.value22.Size = UDim2.fromOffset(v622, v623)
+
+        return
+    end
+
+    if t2.value95 then
+        t2.value99(p68)
+    end
+end)
+t1.value1 = t2.value2.InputEnded
+t1.value1:Connect(function(p69)
+    if p69.UserInputType ~= Enum.UserInputType.MouseButton1 and p69.UserInputType ~= Enum.UserInputType.Touch then
+        return
+    end
+
+    if t2.value90 then
+        t2.value18(t2.value88, {
+			TextColor3 = t2.value8.Accent
+		}, 0.1)
+        t2.value18(t2.value89, {
+			Color = t2.value8.AccentDark,
+			Transparency = 0.5
+		}, 0.1)
+    end
+end)
+t2.value100 = true
+function t1.value1(p70)
+    t2.value100 = p70
+
+    if p70 then
+        t2.value22.Visible = true
+        t2.value22.Size = UDim2.fromOffset(820, 550)
+        t2.value18(t2.value22, {
+			Size = UDim2.fromOffset(900, 600)
+		}, 0.25, Enum.EasingStyle.Quint)
+
+        return
+    end
+
+    t2.value18(t2.value22, {
+		Size = UDim2.fromOffset(0, 0)
+	}, 0.2, Enum.EasingStyle.Quint)
+    task.delay(0.2, function()
+        if not t2.value100 then
+            t2.value22.Visible = false
+        end
+    end)
+end
+local value22_3 = t2.value22
+t1.value1 = "Size"
+value22_3[t1.value1] = UDim2.fromOffset(0, 0)
+task.defer(function()
+    t2.value18(t2.value22, {
+		Size = UDim2.fromOffset(900, 600)
+	}, 0.35, Enum.EasingStyle.Back)
+end)
+v107(1)
